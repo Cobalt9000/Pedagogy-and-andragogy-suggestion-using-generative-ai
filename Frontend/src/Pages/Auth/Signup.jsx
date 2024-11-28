@@ -136,7 +136,7 @@ const SignupPage = ({ setActiveComponent }) => {
           <center>
             {message && <p className="mt-4">{message}</p>}
             {errormessage && <p className="mt-4" style={{ color: 'red' }} >{errormessage}</p>}
-          <p className='p-8'>Already have an account? <a href="#" style={{color: '#3498db'}} onClick={() => setActiveComponent('login')}>Login</a></p></center>
+          <p className='p-8'>Already have an account? <a href="#2596be" style={{color: '#3498db'}} onClick={() => setActiveComponent('login')}>Login</a></p></center>
           <center><GoogleLogin
               onSuccess={handleSuccess}
               onError={handleError}

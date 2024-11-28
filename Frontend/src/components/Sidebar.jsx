@@ -17,7 +17,7 @@ const SideBar = () => {
     <div className="fixed h-full w-56 bg-[#1C1C1C] text-[#CCCCCC] p-4 border-r-[0.5px] border-white rounded-2xl">
       <div className="flex items-center mb-4">
         <div className="avatar placeholder">
-          <div className="bg-[#a4ff9e] text-black rounded-full w-8">
+          <div className="bg-[#2596be] text-black rounded-full w-8">
             <span className="text-xs">{username ? username[0].toUpperCase() : 'U'}</span>
           </div>
         </div>
@@ -29,13 +29,13 @@ const SideBar = () => {
             <summary className="cursor-pointer text-[#CCCCCC] hover:text-[#A8C5DA]" style={{ fontSize: '1.04rem' }}>User profile</summary>
             <ul className="ml-2 mt-2">
               <li>
-                <Link to="/home/overview" className="text-[#CCCCCC] hover:text-[#A8C5DA]" style={{ fontSize: '1.0rem' }}>
-                  <FaChartPie size={21} /> Overview
+                <Link to="/home/pedagogy" className="text-[#CCCCCC] hover:text-[#A8C5DA]" style={{ fontSize: '1.0rem' }}>
+                  <RiBookMarkedLine  size={21} /> Pedagogy 
                 </Link>
               </li>
               <li>
-                <Link to="/home/reports" className="text-[#CCCCCC] hover:text-[#A8C5DA]" style={{ fontSize: '1.0rem' }}>
-                  <RiBookMarkedLine size={21} /> Reports
+                <Link to="/home/andragogy" className="text-[#CCCCCC] hover:text-[#A8C5DA]" style={{ fontSize: '1.0rem' }}>
+                  <RiBookMarkedLine size={21} /> Andragogy
                 </Link>
               </li>
             </ul>

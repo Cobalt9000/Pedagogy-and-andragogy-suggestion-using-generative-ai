@@ -13,7 +13,7 @@ const Navbar = () => {
         </label>
       </div>
       <div className="navbar-center lg:flex-1">
-        <a className="btn btn-ghost text-xl">Code Scanner</a>
+        <a className="btn btn-ghost text-xl">Suggester</a>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">

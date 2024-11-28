@@ -95,7 +95,7 @@ const Login = ({ setActiveComponent, onLogin }) => {
             </center>
           </form>
           <center>{error && <p className="mt-4" style={{color:'red'}}>{error}</p>}
-          <p className='p-8'>Don't have an account?<a href="#" style={{color: '#3498db'}} onClick={() => setActiveComponent('signup')}> Sign up</a></p>
+          <p className='p-8'>Don't have an account?<a href="#2596be" style={{color: '#3498db'}} onClick={() => setActiveComponent('signup')}> Sign up</a></p>
           <GoogleLogin 
               onSuccess={handleSuccess}
               onError={handleError}

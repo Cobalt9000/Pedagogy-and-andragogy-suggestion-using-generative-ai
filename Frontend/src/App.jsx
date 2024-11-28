@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './Pages/Auth/AuthContext';
 import Layout from './components/Layout';
-import ReportsPage from './Pages/Reports/ReportsPage';
-import Overview from './Pages/Overview/Overview';
+
 import Auth from './Pages/Auth/Auth';
 import ProtectedRoute from './components/ProtectedRoute';
 import { GoogleOAuthProvider } from '@react-oauth/google';
+import Pedagogy from './Pages/Pedagogy/Pedagogy'; 
+import Andragogy from './Pages/Andragogy/Andragogy';
 
 const App = () => {
   const [clientId, setClientId] = useState('');
@@ -26,8 +27,8 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Auth />} /> 
             <Route path='/home' element={<Layout />}>
-              <Route path='overview' element={<ProtectedRoute element={<Overview />} />} />
-              <Route path='reports' element={<ProtectedRoute element={<ReportsPage />} />} />
+              <Route path='pedagogy' element={<ProtectedRoute element={<Pedagogy />} />} />
+              <Route path='andragogy' element={<ProtectedRoute element={<Andragogy />} />} />
             </Route>
           </Routes>
         </Router>
