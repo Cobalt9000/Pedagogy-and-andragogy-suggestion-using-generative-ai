@@ -1,4 +1,4 @@
-# Pedagogy and Andragogy Suggestion System Using NLP & Gen AI
+# Pedagogy and Andragogy Suggestion System Using RAG Model & Generative AI
 
 ## Description 📝
 
